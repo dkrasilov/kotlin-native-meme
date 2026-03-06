@@ -14,8 +14,8 @@ private val PrettyPrintJson = Json {
 
 fun main() {
     val message = Message(
-        topic = "Kotlin/Native",
-        content = "Hello!"
+        topic = "I'm spying on you",
+        content = "Data I stole"
     )
     println(PrettyPrintJson.encodeToString(message))
 }
