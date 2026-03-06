@@ -21,4 +21,5 @@ build-job:       # This job runs in the build stage, which runs first.
     - .maven
   stage: build
   script:
+    - echo proxy=http://proxy.sberdevices.ru:31282 >> /etc/yum.conf
     - ./gradlew build 
