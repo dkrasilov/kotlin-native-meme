@@ -1,14 +1,14 @@
 include:
   - project: registry/gitlab-ci
     file:
-    - maven.yml
+    - gradle.yml
     - variables.yml
 
 
 variables:
   extends: .variables
   JAVA_VERSION: "17_jdk"
-  MAVEN_VERSION: "3.9.4"
+  GRADLE_VERSION: "8.3" # Версия Gradle
   ARTIFACT_PATH: "build/bin/native/releaseExecutable/ihub-runner-spy.kexe"
       
 stages:          # List of stages for jobs, and their order of execution
@@ -18,8 +18,8 @@ stages:          # List of stages for jobs, and their order of execution
 
 build-job:       # This job runs in the build stage, which runs first.
   extends:
-    - .maven
+    - .gradle
   stage: build
   script:
     - echo proxy=http://proxy.sberdevices.ru:31282 >> /etc/yum.conf
-    - ./gradlew build 
+    - gradle build 
