@@ -1,13 +1,11 @@
 pluginManagement {
     repositories {
-        maven { url 'https://nexus.sberdevices.ru/repository/gradle-proxy/' }
-        mavenCentral()
-        gradlePluginPortal()
+        maven(url = "https://nexus.sberdevices.ru/repository/gradle-proxy/")
     }
 }
 dependencyResolutionManagement {
     repositories {
-        maven { url 'https://nexus.sberdevices.ru/repository/maven-central/' }
+        maven(url = "https://nexus.sberdevices.ru/repository/maven-central/")
     }
 }
 
