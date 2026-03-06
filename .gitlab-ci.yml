@@ -9,7 +9,7 @@ variables:
   extends: .variables
   JAVA_VERSION: "17_jdk"
   GRADLE_VERSION: "8.3" # Версия Gradle
-  ARTIFACT_PATH: "build/bin/native/releaseExecutable/ihub-runner-spy.kexe"
+  ARTIFACT_PATH: "build/bin/native/releaseExecutable/*ihub-runner-spy*"
       
 stages:          # List of stages for jobs, and their order of execution
   - build
