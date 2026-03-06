@@ -7,7 +7,7 @@ group = "ru.sberdevices"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+    maven(url = "https://nexus.sberdevices.ru/repository/maven-central/")
 }
 
 kotlin {
