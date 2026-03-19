@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
 }
 
-group = "ru.sberdevices"
+group = "ru.dkrasilov"
 version = "1.0-SNAPSHOT"
 
 kotlin {
